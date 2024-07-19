@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 8</title>
+    <link rel="stylesheet" href="css/preguntas.css">
+</head>
+<body>
+
+    <header>
+        <div class="inicio">
+            <a href="index.html"><h3>Inicio</h3></i></a>
+        </div>
+        <div class="texto">
+            <h1>¿Qué es una promesa en JS?</h1>
+        </div>
+        <div class="siguiente">
+            <a href="8.html"><h3>Siguiente<br/> pregunta</h3></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-respuestas">
+            <div class="respuesta">
+                <p>Una promesa es un objeto que representa la eventual finalización (o falla) de una operación asíncrona y su valor resultante. Es como un contrato de que algo sucederá en el futuro, y puede estar en uno de tres estados:</p>
+                <ul>
+                    <li>Pending (Pendiente): El estado inicial, ni cumplida ni rechazada.</li>
+                    <li>Fulfilled (Cumplida): La operación se completó con éxito.</li>
+                    <li>Rejected (Rechazada): La operación falló.</li>
+                </ul>
+                <ol>
+                    <li>Creación de una promesa:
+                        <p>Para crear una promesa, usamos el constructor Promise, que toma una función con dos parámetros: resolve y reject. Estas son funciones que usaremos para cambiar el estado de la promesa.</p> 
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/7/1-creacion-promesa.jpg">
+                    </li>
+                    <li>Manejo de promesas:
+                        <p>Para manejar el resultado de una promesa, usamos los métodos then, catch y finally.</p>
+                        <ul>
+                            <li>then: Se ejecuta cuando la promesa se cumple (estado fulfilled) y recibe el valor resultante.</li>
+                            <li>catch: Se ejecuta cuando la promesa es rechazada (estado rejected) y recibe la razón del rechazo.</li>
+                            <li>finally: Se ejecuta después de que la promesa se haya cumplido o rechazado, sin importar el resultado.</li>
+                            <p>Ejemplo:</p>
+                            <img src="imagenes/7/2-manejo-promesas.jpg">
+                        </ul> 
+                    </li>
+                    <li>Promesas encadenadas:
+                        <p>Las promesas pueden encadenarse para manejar una secuencia de operaciones asíncronas de manera ordenada.</p> 
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/7/3-encadenadas.jpg">
+                    </li>
+                    <li>Uso de Promise.all y Promise.race:
+                        <ul>
+                            <li>Promise.all: Ejecuta múltiples promesas en paralelo y se resuelve cuando todas las promesas se han cumplido. Si alguna promesa se rechaza, Promise.all también se rechaza.</li>
+                            <p>Ejemplo:</p>
+                            <img src="imagenes/7/4-promise-all.jpg">
+                            <li>Promise.race: Se resuelve o rechaza tan pronto como una de las promesas se resuelve o se rechaza.</li>
+                            <p>Ejemplo:</p>
+                            <img src="imagenes/7/5-promise-race.jpg">
+                        </ul>
+                    </li>
+                </ol>
+
+                <ol><h3>¿Por qué usar promesas?</h3>
+                    <li><p>Legibilidad: El código con promesas es más fácil de leer y entender que el código con callbacks anidados (el famoso "callback hell").</p></li>
+                    <li><p>Manejo de errores: Las promesas permiten manejar errores de manera más consistente y centralizada.</p></li>
+                    <li><p>Encadenamiento: Las promesas permiten encadenar operaciones asíncronas de manera ordenada y predecible.</p></li>
+                </ol>
+
+                <ol><h3>En resumen:</h3>
+                    <li><p>Estados: Pending, Fulfilled, Rejected.</p></li>
+                    <li><p>Métodos: then para manejar éxito, catch para manejar errores, finally para ejecutar código independientemente del resultado.</p></li>
+                    <li><p>Encadenamiento: Permite realizar secuencias de operaciones asíncronas de manera clara.</p></li>
+                    <li><p>Utilities: Promise.all y Promise.race para manejar múltiples promesas en paralelo o competiciones de promesas.</p></li>
+                    <p>Ejemplo:</p>
+                    <img src="imagenes/7/6.1-ultima-imagen.jpg">
+                    <img src="imagenes/7/6.2-ultima-imagen.jpg">
+                </ol>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div><p>Ejercicio creado por Marta Bezares para la universidad de Bottega.</p></div>
+    </footer>
+    
+</body>
+</html>

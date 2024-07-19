@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 8</title>
+    <link rel="stylesheet" href="css/preguntas.css">
+</head>
+<body>
+
+    <header>
+        <div class="inicio">
+            <a href="index.html"><h3>Inicio</h3></i></a>
+        </div>
+        <div class="texto">
+            <h1>¿Qué tipo de bucles hay en JS?</h1>
+        </div>
+        <div class="siguiente">
+            <a href="2.html"><h3>Siguiente<br/> pregunta</h3></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-respuestas">
+            <div class="respuesta">
+                <p>Los bucles son estructuras de control que nos permiten repetir un bloque de código varias veces. Esto es muy útil cuando queremos hacer cosas como recorrer una lista de elementos o ejecutar una acción varias veces sin tener que escribir el mismo código una y otra vez.</p>
+                <p>En JavaScript, hay varios tipos de bucles que podemos usar. Vamos a ver los más comunes y cómo funcionan:</p>
+                <ol>
+                    <li>For:
+                        <p>Este es probablemente el bucle más común. Se usa cuando sabes cuántas veces quieres que se repita el bloque de código.</p> 
+                        <p>Tiene tres partes: la inicialización, la condición y la actualización.</p>
+                        <img src="imagenes/1/bucle-for-1.jpg">
+                        <p>Inicialización: let i = 0 (comienza con i igual a 0).</p>
+                        <p>Condición: i < 5 (el bucle sigue mientras i sea menor que 5).</p>
+                        <p>Actualización: i++ (después de cada iteración, i se incrementa en 1).</p>
+                        <p>Ejemplo: Quieres recorrer un array y hacer algo con cada elemento.</p>
+                        <img src="imagenes/1/bucle-for-2.jpg">
+                    </li>
+                    <li>While:
+                        <p>Este bucle se usa cuando no sabes exactamente cuántas veces se repetirá el bloque de código, pero tienes una condición que sabes que eventualmente será falsa.</p> 
+                        <p>Cambia la forma de crear el bucle, pero, al igual que el anterior, tiene las mismas partes: la inicialización, la condición y la actualización.</p>
+                        <img src="imagenes/1/bucle-while-1.jpg">
+                        <p>El bucle sigue ejecutándose mientras i sea menor que 5. Dentro del bucle, incrementamos i en 1 cada vez.</p>
+                        <p>Ejemplo: Quieres pedirle a un usuario que ingrese una contraseña correcta. Seguirás pidiendo hasta que la contraseña sea correcta.</p>
+                        <img src="imagenes/1/bucle-whil-2.jpg">
+                    </li>
+                    <li>Do... while:
+                        <p>Este bucle es similar al while, pero con una diferencia clave: siempre ejecuta el bloque de código al menos una vez antes de comprobar la condición.</p> 
+                        <img src="imagenes/1/bucle-do-while-1.jpg">
+                        <p>Primero ejecuta el bloque de código y luego verifica la condición i < 5. Si es verdadera, repite el bloque.</p>
+                        <p>Ejemplo: Quieres mostrar un mensaje una vez y luego seguir mostrando mientras una condición sea verdadera.</p>
+                        <img src="imagenes/1/bucle-do-while-2.jpg">
+                    </li>
+                    <li>For... in:
+                        <p>Este bucle se utiliza para recorrer las propiedades enumerables de un objeto. Es muy útil cuando trabajamos con objetos en JavaScript.</p> 
+                        <img src="imagenes/1/bucle-for-in-1.jpg">
+                        <p>Recorre cada propiedad del objeto objeto y las muestra junto con sus valores.</p>
+                        <p>Ejemplo: Quieres mostrar todas las propiedades y valores de un objeto.</p>
+                        <img src="imagenes/1/bucle-for-in-2.jpg">
+                    </li>
+                    <li>For... of:
+                        <p>Este bucle se usa para recorrer elementos iterables como arrays, mapas y conjuntos. Es ideal cuando solo te interesa el valor de los elementos y no sus índices.</p> 
+                        <img src="imagenes/1/bucle-for-of-1.jpg">
+                        <p>Recorre cada valor en el array arreglo y los muestra uno por uno.</p>
+                        <p>Ejemplo: Quieres recorrer un array y mostrar cada valor.</p>
+                        <img src="imagenes/1/bucle-for-of-2.jpg">
+                    </li>
+                </ol>
+
+                <ol><h3>En resumen:</h3>
+                    <li><p>For: cuando sabes cuántas veces se debe ejecutar el bucle.</p></li>
+                    <li><p>While: cuando no sabes cuántas veces, pero tienes una condición para detenerlo.</p></li>
+                    <li><p>Do...while: similar a while, pero se ejecuta al menos una vez.</p></li>
+                    <li><p>For...in: para recorrer propiedades de un objeto.</p></li>
+                    <li><p>For...of: para recorrer valores de elementos iterables (arrays, mapas, conjuntos).</p></li>
+                </ol>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div><p>Ejercicio creado por Marta Bezares para la universidad de Bottega.</p></div>
+    </footer>
+    
+</body>
+</html>

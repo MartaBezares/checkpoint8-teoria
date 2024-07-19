@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 8</title>
+    <link rel="stylesheet" href="css/preguntas.css">
+</head>
+<body>
+
+    <header>
+        <div class="inicio">
+            <a href="index.html"><h3>Inicio</h3></i></a>
+        </div>
+        <div class="texto">
+            <h1>¿Qué es una función de flecha?</h1>
+        </div>
+        <div class="siguiente">
+            <a href="4.html"><h3>Siguiente<br/> pregunta</h3></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-respuestas">
+            <div class="respuesta">
+                <p>Las funciones de flecha son una manera más concisa y moderna de escribir funciones.</p>
+                <p>Es una forma compacta de definir una función en JavaScript. Se llama así porque usa la sintaxis => (flecha) para separar los parámetros de la función del cuerpo de la función.</p>
+                <p>La sintaxis básica de una función de flecha es la siguiente:</p>
+                <img src="imagenes/3/sintaxis.jpg">
+                <p>Ejemplos de funciones de flecha:</p>
+                <ol>
+                    <li>Función simple sin parámetros:</li>
+                    <img src="imagenes/3/simple.jpg">
+                    
+                    <li>Función con un parámetro:</li>
+                    <img src="imagenes/3/un-parametro.jpg">
+                    
+                    <li>Función con múltiples parámetros:</li>
+                    <img src="imagenes/3/muchos-parametros.jpg">
+                    
+                    <li>Función con retorno implícito:</li>
+                        <p>Si el cuerpo de la función tiene una sola expresión, puedes omitir las llaves {} y la palabra clave return.</p> 
+                        <img src="imagenes/3/retorno.jpg">
+                </ol>
+
+                <p>Diferencias entre funciones de flecha y funciones tradicionales:</p>
+                <ol>
+                    <li>Sintaxis más concisa:
+                        <p>Las funciones de flecha suelen ser más cortas y fáciles de leer, especialmente cuando son funciones simples.</p>
+                    </li>
+                    <li>No tienen su propio this:
+                        <p>Una de las diferencias más importantes es que las funciones de flecha no tienen su propio this. En lugar de eso, heredan this del contexto en el que fueron definidas.</p>
+                        <img src="imagenes/3/this.png">
+                        <p>En una función tradicional, this dentro de setInterval sería window (en el navegador), pero en una función de flecha, this se refiere a la instancia de Persona.</p>
+                    </li>
+                    <li>No tienen argumentos:</li>
+                        <p>Las funciones de flecha no tienen el objeto argumentos que existe en las funciones tradicionales. Si necesitas acceder a los argumentos, puedes usar el operador rest ....</p>
+                        <img src="imagenes/3/argumentos.jpg">
+                </ol>
+
+                <p>Cuándo usar funciones de flecha:</p>
+                <ul>
+                    <li>Callbacks: Las funciones de flecha son muy útiles para los callbacks (funciones que se pasan como argumentos a otras funciones) porque son más cortas y manejan this de manera predecible.</li>
+                    <img src="imagenes/3/callback.jpg">
+                    <li>Funciones simples: Cuando tienes funciones pequeñas y simples, la sintaxis concisa de las funciones de flecha las hace más legibles.</li>
+                    <img src="imagenes/3/ultima-imagen.jpg">
+                </ul>
+
+                <ul><h3>En resumen:</h3>
+                    <li><p>Sintaxis concisa: Las funciones de flecha son más cortas y fáciles de escribir.</p></li>
+                    <li><p>Ámbito léxico de this: No tienen su propio this, lo que evita ciertos problemas con el contexto de this.</p></li>
+                    <li><p>Sin argumentos: No tienen el objeto argumentos, pero puedes usar el operador rest ... para lograr un efecto similar.</p></li>
+                </ul>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div><p>Ejercicio creado por Marta Bezares para la universidad de Bottega.</p></div>
+    </footer>
+    
+</body>
+</html>

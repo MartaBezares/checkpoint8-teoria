@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 8</title>
+    <link rel="stylesheet" href="css/preguntas.css">
+</head>
+<body>
+
+    <header>
+        <div class="inicio">
+            <a href="index.html"><h3>Inicio</h3></i></a>
+        </div>
+        <div class="texto">
+            <h1>¿Qué hacen async y await por nosotros?</h1>
+        </div>
+        <div class="siguiente">
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-respuestas">
+            <div class="respuesta">
+                <p>async y await nos permiten escribir funciones asincrónicas de manera más legible y manejable. Simplifican el uso de promesas y eliminan la necesidad de encadenar múltiples then y catch.</p>
+                <ol>
+                    <li>async:
+                        <p>La palabra clave async se usa para declarar una función asincrónica. Una función declarada con async siempre devuelve una promesa. Si la función devuelve un valor, la promesa se resolverá con ese valor. Si la función lanza una excepción, la promesa se rechazará con el valor de esa excepción.</p> 
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/8/1-async.jpg">
+                    </li>
+                    <li>await:
+                        <p>La palabra clave await se usa dentro de una función async para esperar a que una promesa se resuelva. await detiene la ejecución de la función async hasta que la promesa se resuelva o rechace, y luego reanuda la ejecución de la función con el valor resuelto de la promesa.</p> 
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/8/2-await.jpg">
+                    </li>
+                </ol>
+
+                <ol><h3>Ventajas de async y await:</h3>
+                    <li><p>Legibilidad: El código es más fácil de leer y entender, similar al código sincrónico.</p></li>
+                    <li><p>Manejo de errores: Se puede usar try y catch para manejar errores de manera más clara.</p></li>
+                    <li><p>Eliminación del encadenamiento: Simplifica el manejo de múltiples promesas sin necesidad de encadenar múltiples then y catch.</p></li>
+                    <p>Ejemplo: Supongamos que queremos obtener datos de un servidor, procesarlos y luego mostrarlos. Con async y await, podemos escribir el código de manera clara y sencilla.</p>
+                    <p>Así se escribiría el código con la promesa:</p>
+                    <img src="imagenes/8/3.1-codigo-promesa.jpg">
+                    <img src="imagenes/8/3.2-codigo.promesa.jpg">
+                    <p>Y así se escribiría el código con async y await:</p>
+                    <img src="imagenes/8/4-codigo-async-await.jpg">
+                </ol>
+
+                <h3>Uso avanzado de async y await</h3>
+                <ol>
+                    <li>Ejecutar promesas en paralelo:
+                        <p>Podemos usar Promise.all con await para ejecutar múltiples promesas en paralelo y esperar a que todas se resuelvan.</p>
+                        <img src="imagenes/8/5-ejecutar-promesa-paralelo.jpg">
+                    </li>
+                    <li>Retornos anticipados:
+                        <p>Si necesitamos salir anticipadamente de una función async, simplemente podemos devolver un valor.</p>
+                        <img src="imagenes/8/6-retorno.jpg">
+                    </li>
+                </ol>
+
+                <ol><h3>En resumen:</h3>
+                    <li><p>async: Declara una función asincrónica que devuelve una promesa.</p></li>
+                    <li><p>await: Pausa la ejecución de una función async hasta que la promesa se resuelva o rechace.</p></li>
+                    <li><p>Legibilidad: Hace que el código asincrónico sea más fácil de leer y escribir.</p></li>
+                    <li><p>Manejo de errores: Permite usar try y catch para manejar errores de manera clara.</p></li>
+                    <p>Ejemplo: Supongamos que queremos obtener datos de un servidor, procesarlos, y luego guardar los datos procesados en otro lugar. Todo esto debe hacerse de manera asincrónica y ordenada.</p>
+                    <img src="imagenes/8/7.1-ultima-imagen.jpg">
+                    <img src="imagenes/8/7.2-ultima-imagen.jpg">
+                </ol>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div><p>Ejercicio creado por Marta Bezares para la universidad de Bottega.</p></div>
+    </footer>
+    
+</body>
+</html>

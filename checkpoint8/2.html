@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/preguntas.css">
+</head>
+<body>
+    <header>
+        <div class="inicio">
+            <a href="index.html"><h3>Inicio</h3></i></a>
+        </div>
+        <div class="texto">
+            <h1>¿Cuáles son las diferencias entre const, let y var?</h1>
+        </div>
+        <div class="siguiente">
+            <a href="3.html"><h3>Siguiente<br/> pregunta</h3></a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contenedor-respuestas">
+            <div class="respuesta">
+                <p>Vamos a aprender sobre las diferencias entre const, let y var en JavaScript. Estos son tipos de declaraciones de variables que usamos para almacenar datos, pero cada uno tiene características específicas que los hacen adecuados para diferentes situaciones.</p>
+                <p>Vamos a desglosar cada uno y ver cuándo y por qué usaríamos cada tipo.</p>
+                <ol>
+                    <li>Var:
+                        <p>Es la forma más antigua de declarar variables en JavaScript y tiene algunas características únicas:</p> 
+                        <ul>
+                            <li>Ámbito de función: Las variables declaradas con var tienen ámbito de función, lo que significa que son accesibles en toda la función donde se declaran.</li>
+                            <li>Hoisting: Las variables declaradas con var son "elevadas" al comienzo de su ámbito. Esto significa que puedes usar la variable antes de su declaración, aunque su valor será indefinido hasta que se inicialice.</li>
+                        </ul>
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/2/var.jpg">
+                    </li>
+                    <li>Let:
+                        <p>Es la forma moderna de declarar variables.</p> 
+                        <p>Tiene varias mejoras respecto a var:</p>
+                        <ul>
+                            <li>Ámbito de bloque: Las variables declaradas con let tienen ámbito de bloque, lo que significa que solo son accesibles dentro del bloque {} donde se declaran.</li>
+                            <li>No se eleva de la misma manera: Aunque let también se eleva, no se inicializa hasta que la ejecución alcanza su declaración. Intentar acceder a una variable let antes de su declaración resultará en un error.</li>
+
+                        </ul>
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/2/let.jpg">
+                    </li>
+                    <li>Const:
+                        <p>Se introdujo a la vez que let y se usa para declarar variables que no se pueden reasignar (constantes). Sin embargo, no significa que el valor almacenado sea inmutable, solo que la referencia a la variable no puede cambiar.</p> 
+                        <p>Sus características son:</p>
+                        <ul>
+                            <li>Ámbito de bloque: Igual que let, const tiene ámbito de bloque.</li>
+                            <li>Debe ser inicializada: Una variable const debe ser inicializada al momento de su declaración y no puede ser reasignada.</li>
+                        </ul>
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/2/const.jpg">
+                    </li>
+                    <li>Objetos y arrays:
+                        <p>Aunque no puedes reasignar un const, puedes modificar sus propiedades o elementos.</p> 
+                        <p>Ejemplo:</p>
+                        <img src="imagenes/2/array.jpg">
+                    </li>
+                </ol>
+
+                <ol><h3>En resumen:</h3>
+                    <li>Var:
+                        <ul>
+                            <li>Ámbito: Función.</li>
+                            <li>Hoisting: Sí, pero inicializado como indefinido.</li>
+                            <li>Reasignable: Sí.</li>
+                            <li>¿Cuándo usar cada uno?: Generalmente se desaconseja su uso en favor de let y const debido a sus problemas de ámbito y hoisting. </li>
+                        </ul>
+                    </li>
+                    <li>Let:
+                        <ul>
+                            <li>Ámbito: Bloque.</li>
+                            <li>Hoisting: Sí, pero no se puede acceder antes de la declaración.</li>
+                            <li>Reasignable: Sí.</li>
+                            <li>¿Cuándo usar cada uno?: Usa let para variables que necesitas reasignar pero que deben tener ámbito de bloque.</li>
+                        </ul>
+                    </li>
+                    <li>Const:
+                        <ul>
+                            <li>Ámbito: Bloque.</li>
+                            <li>Hoisting: Sí, pero no se puede acceder antes de la declaración.</li>
+                            <li>Reasignable: No, la referencia no puede cambiar. Sin embargo, puedes modificar los contenidos de objetos y arrays.</li>
+                            <li>¿Cuándo usar cada uno?: Usa const para variables que no deben ser reasignadas. Es una buena práctica preferir const a menos que sepas que necesitas reasignar la variable.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <div><p>Ejercicio creado por Marta Bezares para la universidad de Bottega.</p></div>
+    </footer>
+</body>
+</html>
